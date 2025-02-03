@@ -1,0 +1,91 @@
+site_name: Pictastic.ai Docs
+site_url: https://docs.pictastic.ai
+site_description: Documentation for Pictastic.ai media management and virtual staging platform
+site_author: Pictastic Team
+
+theme:
+ name: material
+ logo: https://framerusercontent.com/images/rHShumY2Vv1FfMSewwgqhLOSnVs.svg?scale-down-to=512
+ favicon: https://framerusercontent.com/images/rHShumY2Vv1FfMSewwgqhLOSnVs.svg?scale-down-to=512
+ palette:
+   scheme: default
+   primary: custom
+   accent: custom
+
+extra_css:
+ - assets/css/custom.css
+
+extra_css:
+  - assets/css/custom.css
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+  - git-revision-date
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+extra:
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/pictastic
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/company/pictastic
+
+extra_css:
+  - assets/css/custom.css
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Overview: getting-started/overview.md
+  - Media:
+    - Media Management: media/overview.md
+    - Upload & Organization: media/upload-organization.md
+    - Storage Management: media/storage.md
+  - Virtual Staging:
+    - Virtual Staging AI: virtual-staging/overview.md
+    - Creating Designs: virtual-staging/creating-designs.md
+    - Design Styles: virtual-staging/design-styles.md
+    - Credits & Pricing: virtual-staging/credits-pricing.md
+  - Albums:
+    - Albums: albums/overview.md
+    - Creating Albums: albums/creating-albums.md
+    - Sharing Options: albums/sharing.md
+    - Managing Content: albums/managing-content.md
+  - Project Sites:
+    - Project Sites: project-sites/overview.md
+    - Creating Sites: project-sites/creating-sites.md
+    - Property Websites: project-sites/property-websites.md
+    - Site Customization: project-sites/customization.md
+  - Customization:
+    - Themes: customization/themes.md
+    - Interface Settings: customization/interface.md
+    - Branding: customization/branding.md
+  - Account:
+    - Profile Settings: account/profile.md
+    - Subscription Management: account/subscription.md
+    - Custom Domain: account/custom-domain.md
+  - System:
+    - Trash Management: system/trash.md
+    - Storage Management: system/storage.md
+    - Technical Specifications: system/specs.md
