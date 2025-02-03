@@ -1,15 +1,97 @@
 :root {
-    --md-primary-fg-color: white;
-    --md-accent-fg-color: #4177FF;
+    /* Updated Primary Color */
+    --md-primary-fg-color: #316CF4;
+    /* New Primary Blue */
+    --md-accent-fg-color: #1CA4A8;
+    /* Teal as accent */
+    --md-primary-bg-color: #FFFFFF;
+    /* White Background */
+    --md-primary-fg-color--light: #FFFFFF;
+    --md-primary-fg-color--dark: #000000;
+    --md-text-color: #000000;
 }
 
+/* Header & Navigation (Keep White) */
 .md-header {
-    background-color: white;
-    color: black;
-    box-shadow: none;
-    border-bottom: 1px solid #eee;
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+    border-bottom: 1px solid #eee !important;
 }
 
-.md-header__button.md-logo img {
-    height: 2rem;
+/* Hide repository link in header */
+.md-header__source {
+    display: none !important;
+}
+
+/* Buttons */
+.md-button {
+    background-color: #316CF4 !important;
+    border: 2px solid #316CF4 !important;
+    color: #FFFFFF !important;
+    border-radius: 100px !important;
+}
+
+.md-button:hover {
+    background-color: #1A52C2 !important;
+    /* Darker blue */
+    color: #FFFFFF !important;
+    border-color: #1A52C2 !important;
+}
+
+/* Secondary Buttons */
+.md-button--secondary {
+    border: 2px solid #316CF4 !important;
+    color: #316CF4 !important;
+}
+
+/* Tabs */
+.md-tabs__item--active .md-tabs__link {
+    color: #ffffff !important;
+    border-bottom: 1px solid #ffffff !important;
+}
+
+.md-tabs__link:hover {
+    color: #316CF4 !important;
+}
+
+.md-tabs__link {
+    color: #ffffff !important;
+}
+
+/* Links */
+a {
+    color: #316CF4 !important;
+}
+
+a:hover {
+    color: #1A52C2 !important;
+}
+
+/* Headings */
+.md-content h1,
+.md-content h2 {
+    color: #316CF4;
+}
+
+/* Search Input */
+.md-search__input {
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+/* GitHub Source Link */
+.md-source {
+    background-color: rgba(49, 108, 244, 0.08) !important;
+    /* Subtle blue tint */
+    color: #316CF4 !important;
+}
+
+.md-source:hover {
+    background-color: rgba(49, 108, 244, 0.15) !important;
+}
+
+/* Hero Section */
+.md-hero {
+    background-color: #316CF4;
+    /* New primary blue */
+    color: #FFFFFF;
 }

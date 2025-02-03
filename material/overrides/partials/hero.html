@@ -1,0 +1,12 @@
+{% if page.meta.hero %}
+<section class="md-hero" style="background: url('{{ page.meta.hero.image | url }}') no-repeat center/cover;">
+    <div class="md-hero__inner md-grid">
+        {% if page.meta.hero.title %}
+        <h1 class="md-hero__title">{{ page.meta.hero.title }}</h1>
+        {% endif %}
+        {% if page.meta.hero.tagline %}
+        <p class="md-hero__tagline">{{ page.meta.hero.tagline }}</p>
+        {% endif %}
+    </div>
+</section>
+{% endif %}
