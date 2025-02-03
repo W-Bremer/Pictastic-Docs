@@ -2,22 +2,23 @@ site_name: Pictastic.ai Docs
 site_url: https://docs.pictastic.ai
 site_description: Documentation for Pictastic.ai media management and virtual staging platform
 site_author: Pictastic Team
+repo_url: https://github.com/W-Bremer/Pictastic-Docs
+
 
 theme:
- name: material
- logo: https://framerusercontent.com/images/rHShumY2Vv1FfMSewwgqhLOSnVs.svg?scale-down-to=512
- favicon: https://framerusercontent.com/images/rHShumY2Vv1FfMSewwgqhLOSnVs.svg?scale-down-to=512
- palette:
-   scheme: default
-   primary: custom
-   accent: custom
-
-extra_css:
- - assets/css/custom.css
-
-extra_css:
-  - assets/css/custom.css
-
+  name: material
+  logo: "https://framerusercontent.com/images/rHShumY2Vv1FfMSewwgqhLOSnVs.svg?scale-down-to=512"
+  favicon: "https://framerusercontent.com/images/rHShumY2Vv1FfMSewwgqhLOSnVs.svg?scale-down-to=512"
+  custom_dir: docs/material/overrides
+  palette:
+    scheme: default
+    primary: custom
+    accent: custom
+  features:
+    - content.code.annotate
+    - navigation.tabs
+    - navigation.instant
+  
 plugins:
   - search
   - minify:
